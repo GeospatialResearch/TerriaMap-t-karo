@@ -1,15 +1,14 @@
-# develop container
-FROM node:16 as develop
-
 # build container
 FROM node:16 as build
 USER node
 
-COPY --chown=node:node . /app
-
 WORKDIR /app
 
+COPY --chown=node:node package.json .
+COPY --chown=node:node yarn.lock .
 RUN yarn install --network-timeout 1000000
+
+COPY --chown=node:node . .
 RUN yarn gulp release
 
 # deploy container

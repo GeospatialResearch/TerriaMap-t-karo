@@ -1,0 +1,7 @@
+services:
+  terria_map:
+    # Front-end using terria.js
+    build: .
+    image: GeospatialResearch/terria_map
+    ports:
+      - "3001:3001"
