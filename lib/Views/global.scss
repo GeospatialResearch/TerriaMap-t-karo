@@ -34,6 +34,7 @@ body {
         display: inline;
       }
     }
+
     // Different font size for the branding
     font-weight: 300;
     color: white;
@@ -47,10 +48,12 @@ body {
     // background-size: 100%;
     // background-repeat: no-repeat;
   }
+
   // Background of whole left panel
   .tjs-standard-user-interface__sidePanel {
     background: $dark-darker;
   }
+
   // Individual sections within the left panel
   .tjs-side-panel__workBench {
     font-family: $font-base;
@@ -66,6 +69,12 @@ body {
     }
   }
 
+  // Story panel does not have any official class so needs a more complex selector
+  .tjs-standard-user-interface__story-wrapper
+    > div:not(.tjs-standard-user-interface__ui-root) {
+    background-color: $dark;
+  }
+
   // Additional styles for specific elements
   .tjs-_buttons__btn-primary {
     font-family: $font-base;
@@ -74,6 +83,7 @@ body {
   // Buttons like "Share" within the map area.
   .tjs-_buttons__btn--map {
     background: $dark;
+
     &:focus,
     &:hover {
       color: white;
@@ -85,6 +95,7 @@ body {
   .tjs-legend__distanceLegend {
     background: $dark;
     color: white;
+
     &:hover,
     &:focus {
       background: $dark;
@@ -120,6 +131,7 @@ body {
     h1 {
       color: $color-primary;
     }
+
     table th {
       // font-family: $font-base; // if you don't want monospaced
       font-weight: 200; // not bold
@@ -132,6 +144,7 @@ body {
       font-weight: normal; // not bold
       color: hsl(0, 0%, 90%);
     }
+
     a {
       color: $color-secondary;
     }
@@ -144,17 +157,20 @@ body {
       background: $color-secondary;
       color: white;
     }
+
     &:focus {
       background: $color-primary;
       color: white;
     }
   }
+
   // The currently selected item in the list
   .tjs-data-catalog-item__btn-catalog-item--is-previewed {
     &:focus {
       color: $color-primary;
     }
   }
+
   // The tabs at the top
   .tjs-tabs__btn--tab {
     font-family: $font-base;
@@ -163,6 +179,7 @@ body {
   .tjs-tabs__btn--selected {
     color: $color-primary-dark;
   }
+
   .tjs-tabs__btn--tab:hover {
     color: $color-secondary;
   }
