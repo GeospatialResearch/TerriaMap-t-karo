@@ -167,6 +167,23 @@ body {
     }
   }
 
+  .tjs-data-catalog-group__catalog-group > li {
+    button[class*="Button__RawButton"] {
+      &:hover,
+      &:focus,
+      &.hHdaZ {
+        color: $color-secondary;
+      }
+    }
+    svg {
+      &:hover,
+      &:focus,
+      &.hHdaZ {
+        fill: $color-secondary;
+      }
+    }
+  }
+
   // The currently selected item in the list
   .tjs-data-catalog-item__btn-catalog-item--is-previewed {
     &:focus {
