@@ -152,7 +152,10 @@ body {
 
   // The Data Catalog ("Add Data") page
   // expandable catalog groups
-  .tjs-data-catalog-group__btn--catalog {
+  button.tjs-data-catalog-group__btn--catalog {
+    background: inherit;
+    color: black;
+
     &:hover {
       background: $color-secondary;
       color: white;
