@@ -2,6 +2,6 @@ services:
   terria_map:
     # Front-end using terria.js
     build: .
-    image: lparkinson/otakaro_terria_map:1.1
+    image: lparkinson/otakaro_terria_map:1.2
     ports:
       - "3001:3001"

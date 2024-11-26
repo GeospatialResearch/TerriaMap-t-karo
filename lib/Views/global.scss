@@ -59,14 +59,16 @@ body {
     background: $dark-darker;
   }
 
-  // All kinds of buttons in various screens
-  .tjs-_buttons__btn {
-    &-primary {
-      font-family: $font-base;
+  .tjs-standard-user-interface__uiInner button,
+  .tjs-_buttons__btn-primary {
+    &:focus {
+      outline: 3px solid $color-secondary;
     }
-    &:hover {
-      color: $color-primary;
-    }
+  }
+
+  // Additional styles for specific elements
+  .tjs-_buttons__btn-primary {
+    font-family: $font-base;
   }
 
   // Buttons like "Share" within the map area.
