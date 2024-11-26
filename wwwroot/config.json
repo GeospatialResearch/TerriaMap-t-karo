@@ -40,9 +40,7 @@
     "appName": "Terria Map",
     // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
     "brandBarElements": [
-      "",
-      "<a href=\"#\"><img src=\"images/kowhaiwhai.svg\" title=\"Version: {{version}}\" /></a>",
-      ""
+      "<a href=\"#\" target=\"_blank\" style=\"background-image: url(&quot;/images/kowhaiwhai.svg&quot;);  width: 100%; height: 100%;background-size: 50% 100%;\"></a>"
     ],
     // Shown when things go wrong.
     "supportEmail": "help@example.com",
