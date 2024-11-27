@@ -157,7 +157,7 @@ body {
     }
 
     table td {
-      border: none;
+      border: 1px solid $dark;
       // font-family: $font-base; // if you don't want monospaced
       font-weight: normal; // not bold
       color: hsl(0, 0%, 90%);
