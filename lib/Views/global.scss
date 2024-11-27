@@ -73,6 +73,11 @@ body {
   .tjs-standard-user-interface__story-wrapper
     > div:not(.tjs-standard-user-interface__ui-root) {
     background-color: $dark;
+
+    // Overide grey text within Help menu
+    div {
+      color: white;
+    }
   }
 
   // Additional styles for specific elements
