@@ -63,10 +63,15 @@ body {
   }
 
   .tjs-standard-user-interface__uiInner button,
-  .tjs-_buttons__btn-primary {
+  .tjs-_buttons__btn-primary,
+  .tjs-_buttons__btn {
     &:focus {
       outline: 3px solid $color-secondary;
     }
+  }
+
+  .tjs-_buttons__btn {
+    background-color: $color-primary;
   }
 
   // Story panel does not have any official class so needs a more complex selector
@@ -132,6 +137,14 @@ body {
   }
 
   // Feature info table
+  .tjs-feature-info-panel {
+    &__panel,
+    &__header,
+    &__btn-location {
+      background: $dark;
+    }
+  }
+
   .tjs-feature-info-section__content {
     h1 {
       color: $color-primary;
