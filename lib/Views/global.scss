@@ -22,6 +22,9 @@ body {
 
   html {
     font-family: $font-base;
+    :focus {
+      outline: 3px solid $color-secondary;
+    }
   }
   button,
   input,
@@ -76,18 +79,21 @@ body {
   .tjs-standard-user-interface__uiInner button,
   .tjs-_buttons__btn-primary,
   .tjs-_buttons__btn,
-  input[class^="SearchBox__SearchInput"] {
+  input[class^="SearchBox__SearchInput"],
+  input[class*="__StyledInput"],
+  label[class*="Checkbox___Styled"] {
     &:focus {
       outline: 3px solid $color-secondary;
     }
   }
 
-  .tjs-_buttons__btn {
-    background-color: $color-primary;
-  }
-
-  button[class*="Button__RawButton"]:focus {
-    outline: 3px solid $color-secondary;
+  button {
+    &[class*="Button__RawButton"],
+    &[class*="Button__StyledButton"] {
+      &:focus {
+        outline: 3px solid $color-secondary;
+      }
+    }
   }
 
   // Story panel does not have any official class so needs a more complex selector
@@ -100,11 +106,20 @@ body {
     fill {
       color: white;
     }
+    a {
+      color: $color-secondary;
+    }
   }
 
   // Additional styles for specific elements
   .tjs-_buttons__btn-primary {
     font-family: $font-base;
+  }
+  button.tjs-_buttons__btn--secondary {
+    color: white;
+    &:hover {
+      color: white;
+    }
   }
 
   // Buttons like "Share" within the map area.
