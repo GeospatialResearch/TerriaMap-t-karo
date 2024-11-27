@@ -80,7 +80,8 @@ body {
     background-color: $dark;
 
     // Overide grey text within Help menu
-    div {
+    div,
+    fill {
       color: white;
     }
   }
@@ -143,6 +144,10 @@ body {
     &__btn-location {
       background: $dark;
     }
+  }
+
+  .tjs-feature-info-section__title {
+    background-color: $color-primary;
   }
 
   .tjs-feature-info-section__content {
