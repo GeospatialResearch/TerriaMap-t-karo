@@ -62,6 +62,10 @@ body {
     background: $dark-darker;
   }
 
+  li.ui-sortable-item[class*="List__Li"][class*="WorkbenchItem"] {
+    background-color: $color-primary;
+  }
+
   .tjs-standard-user-interface__uiInner button,
   .tjs-_buttons__btn-primary,
   .tjs-_buttons__btn {
