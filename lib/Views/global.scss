@@ -86,6 +86,10 @@ body {
     background-color: $color-primary;
   }
 
+  button[class*="Button__RawButton"]:focus {
+    outline: 3px solid $color-secondary;
+  }
+
   // Story panel does not have any official class so needs a more complex selector
   .tjs-standard-user-interface__story-wrapper
     > div:not(.tjs-standard-user-interface__ui-root) {
