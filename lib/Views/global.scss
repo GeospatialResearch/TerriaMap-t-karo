@@ -23,6 +23,13 @@ body {
   html {
     font-family: $font-base;
   }
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: $font-base;
+  }
 
   // Logo area in top left
   .tjs-branding__branding {
@@ -221,6 +228,10 @@ body {
     &:focus {
       color: $color-primary;
     }
+  }
+
+  .tjs-my-data-tab__tab-list__btn {
+    background: transparent;
   }
 
   // The tabs at the top
