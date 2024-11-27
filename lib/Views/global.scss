@@ -141,6 +141,10 @@ body {
     background: $dark-with-overlay;
   }
 
+  div[class*="BottomBar"] {
+    background: linear-gradient(180deg, $color-primary 0%, $color-primary 100%);
+  }
+
   // Feature info table
   .tjs-feature-info-panel {
     &__panel,
@@ -202,6 +206,7 @@ body {
         color: $color-secondary;
       }
     }
+
     svg {
       &:hover,
       &:focus,
