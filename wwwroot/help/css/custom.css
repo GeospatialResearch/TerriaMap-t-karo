@@ -117,11 +117,17 @@ ul {
 }
 
 .navbar-brand {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: inherit;
+  padding-bottom: inherit;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 a.navbar-brand > h2 {
   color: white;
+  margin: inherit;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
 }
 
 .navbar-brand img {
@@ -216,6 +222,7 @@ h2 > a {
 .navbar-brand {
   margin-right: 80px;
   height: 80px;
+  padding-top: 10px;
 }
 
 .navbar-brand img {
