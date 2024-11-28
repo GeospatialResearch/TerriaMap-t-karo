@@ -64,6 +64,14 @@ body {
     background: $dark-darker;
   }
 
+  div {
+    &[class^="WorkflowPanel__Container"],
+    &[class^="SidePanelContainer"] {
+      font-family: $font-base;
+      outline: 2px red dashed;
+    }
+  }
+
   // Individual sections within the left panel
   .tjs-side-panel__workBench {
     font-family: $font-base;
