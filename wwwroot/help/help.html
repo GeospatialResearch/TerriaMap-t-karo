@@ -9,7 +9,7 @@
   <meta name="author" content="">
   <link rel="icon" href="../../favicon.ico">
 
-  <title>The National Map - Help & FAQ</title>
+  <title>The Ōtākaro Digital Twin - Help & FAQ</title>
 
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -51,8 +51,8 @@
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/about.html">About the National Map</a></li>
-        <li><a href="#">Help & FAQ</a></li>
+        <li><a href="/about.html">About the Ōtākaro Digital Twin</a></li>
+        <li class="active"><a href="#">Help & FAQ</a></li>
         <li><a href="/help/privacy.html">Privacy</a></li>
         <li><a href="/" target="blank">Launch the Digital Twin</a></li>
       </ul>
@@ -70,27 +70,11 @@
 
         <h4 class="nav-header">How to...</h4>
         <ul class="how-to">
-          <li><a href="help.html">Get started with the National Map</a></li>
+          <li><a href="help.html">Get started with the Ōtākaro Digital Twin</a></li>
           <li><a href="help.html#feature-info">Find out about a displayed feature</a></li>
           <li><a href="help.html#add-data">Display my own spatial data</a></li>
-          <li><a href="help.html#share">Share my National Map view</a></li>
-          <li><a href="help.html#contribute">Contribute Data Sets to the National Map</a></li>
+          <li><a href="help.html#share">Share my Ōtākaro Digital Twin view</a></li>
         </ul>
-
-        <h4 class="nav-header">Key Features</h4>
-        <ul class="key-features">
-          <li><a href="map-navigation.html">Map Navigation and Display</a></li>
-          <li><a href="data-catalogue.html">Data Catalogue</a></li>
-          <li><a href="data-workbench.html">Data Workbench</a></li>
-        </ul>
-
-        <h4 class="nav-header">Frequently Asked Questions</h4>
-        <ul class="faq">
-          <li><a href="faq.html">National Map Operation</a></li>
-          <li><a href="faq.html#nm-systemdata">National Map system and data</a></li>
-          <li><a href="faq.html#nm-reportingissues">Reporting issues</a></li>
-        </ul>
-
       </div>
 
     </nav>
@@ -98,20 +82,14 @@
     <div class="col-md-8">
 
       <h1>Help & FAQ</h1>
+      <h2><a class="anchor" name="getting-started">How to get started with the Ōtākaro Digital Twin</a></h2>
 
-      <!-- 4:3 aspect ratio -->
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/2E-u0gjz9Yw"></iframe>
-      </div>
-
-      <h2><a class="anchor" name="getting-started">How to get started with the National Map</a></h2>
-
-      <p>To launch the National Map and display some basic data follow these steps.</p>
-
+      <p>To launch the Ōtākaro Digital Twin and display some basic data follow these steps.</p>
+      <!--todo favicons-->
       <ul>
-        <li>Display the NationalMap by using the URL <a href="http://nationalmap.gov.au">http://nationalmap.gov.au</a>.
+        <li>Display the Ōtākaro Digital Twin by using the URL <a href="http://otakaro.digitaltwins.nz">http://otakaro.digitaltwins.nz</a>.
         </li>
-        <li>In the left hand panel click the <strong>Add Data</strong> button to launch the Data Catalogue.</li>
+        <li>In the left hand panel click the <strong>Explore map data</strong> button to launch the Data Catalogue.</li>
         <li>Browse through the Data Catalogue to find a data set of interest. Click on the title of your prefered data
           set to get a preview of that data, along with a description and other relevent metadata. To view your selected
           data set on a larger map, click the <strong>Add to the Map</strong> button. The spatial data will be
@@ -138,8 +116,32 @@
 
       <p>You can perform these steps in any order as required to tune your display of spatial data.</p>
 
+      <h2>How to model stormwater run off contamination sources with the MEDUSA2.0 model</h2>
+      <p>To run an implementation of the MEDUSA2.0 model in the Ōtākaro Digital Twin take the following steps:</p>
+      <ul>
+        <li>
+          Display the Ōtākaro Digital Twin by using the URL <a href="http://otakaro.digitaltwins.nz">http://otakaro.digitaltwins.nz</a>.
+        </li>
+        <li>In the left hand panel click the <strong>Explore map data</strong> button to launch the Data Catalogue.</li>
+        <li>Change tabs into the "Custom Analysis" tab.</li>
+        <li>Select MEDUSA Pollution source model.</li>
+        <li>
+          Enter values for each of the parameters for of the model. E.g.
+          <dl>
+            <dt>Antecedent Dry Day (number of dry days between rain events)</dt>
+            <dd>1.5</dd>
+            <dt>Average Rain Intensity (mm/h)</dt>
+            <dd>0.5</dd>
+            <dt>Event Duration (hours)</dt>
+            <dd>2</dd>
+          </dl>
+        </li>
+        <li>Wait a up to a few minutes for the model to finish processing.</li>
+        <li>MEDUSA Road Surfaces and MEDUSA Roof Surfaces will load into the map for viewing and analysis.</li>
+        <li>Change the variable displayed by clicking through the <strong>Display Variable</strong> dropdown.</li>
+      </ul>
 
-      <h2><a class="anchor" name="feature-info">How to find out about a displayed feature</a></h2>
+      <h2><a class="anchor" id="feature-info">How to find out about a displayed feature</a></h2>
 
       <p>Click on the feature which is displayed on the map. You can click on Points, on Lines or within Regions to see
         a display of the information available from the spatial data provider for that particular feature.</p>
@@ -152,7 +154,7 @@
 
       <h2><a class="anchor" name="add-data">How to display my own spreadsheet or spatial data</a></h2>
 
-      <p>National Map can display two kinds of spreadsheets:
+      <p>Ōtākaro Digital Twin can display two kinds of spreadsheets:
       <p>
       <ol>
         <li>Spreadsheets with a <strong>point location (latitude and longitude)</strong> for each row, expressed as two
@@ -160,7 +162,8 @@
         </li>
         <li>Spreadsheets where each row refers to a <strong>region</strong> such as a local government area (council),
           state, postcode, or ABS statistical unit such as an SA2 or CED (Commonwealth Electoral Division). Columns must
-          be named according to the <a href="https://github.com/NICTA/nationalmap/wiki/csv-geo-au">CSV-geo-au</a>
+          be named according to the <a
+            href="https://github.com/NICTA/Ōtākaro Digital Twin/wiki/csv-geo-au">CSV-geo-au</a>
           standard. These will be displayed as regions, highlighting the actual shape of each area.
         </li>
       </ol>
@@ -171,13 +174,16 @@
       <p>There are two ways to load your data:</p>
 
       <ul>
-        <li>Drag your data file onto the NationalMap map view. The format of the data file will be auto-detected.</li>
+        <li>Drag your data file onto the Ōtākaro Digital Twin map view. The format of the data file will be
+          auto-detected.
+        </li>
         <li>Click on the <strong>Add Data</strong> button in the left hand panel. This will launch the Data Catalogue.
           Select the <strong>My Data</strong> tab at the top of the modal window and follow the provided instructions.
         </li>
       </ul>
 
-      <p>As for NationalMap data sets, you can click on the regions or points to see the data available for that
+      <p>As for Ōtākaro Digital Twin data sets, you can click on the regions or points to see the data available for
+        that
         location. If the file is a CSV file, the data from all columns will be shown in the feature information dialogue
         when you click.</p>
 
@@ -187,7 +193,7 @@
         load it from there.</p>
 
 
-      <h2><a class="anchor" name="share">How to share my National Map view with others</a></h2>
+      <h2><a class="anchor" name="share">How to share my Ōtākaro Digital Twin view with others</a></h2>
 
       <p>There are three ways:</p>
 
@@ -198,7 +204,7 @@
         </li>
         <li>Click the Share button, copy the HTML fragment (shown in the second text box) and paste it into an HTML
           file, which you then make available to the recipients. When the recipients display your web page, they will
-          see the NationalMap view within that web page.
+          see the Ōtākaro Digital Twin view within that web page.
         </li>
         <li>Take a screenshot and email it as an image (see your OS instructions on how to take a screenshot). This will
           share all information, even if loaded from a local file or URL.
@@ -206,28 +212,6 @@
       </ul>
 
       <p><strong>Note that only the third method will show the data you have loaded from a local file</strong>.</p>
-
-
-      <h2><a class="anchor" name="contribute">How to contribute Data Sets to National Map</a></h2>
-
-      <p>The NationalMap encourages data providers to publish their spatial data using this platform. There are two
-        routes you can take to publishing.</p>
-
-      <ul>
-        <li><p>Any spatial data which is added to <a href="http://data.gov.au">data.gov.au</a> using a protocol or
-          format supported by the NationalMap (such as WMS) will automatically appear in the
-          <strong>data.gov.au</strong> section of the <strong>Data Catalogue</strong> tab for the NationalMap. See WMS
-          Data Sets for a list of spatial data sets already on <a href="http://data.gov.au">data.gov.au</a>. See the <a
-            href="https://toolkit.data.gov.au/index.php?title=How_to_use_data.gov.au">data.gov.au Toolkit</a> for a
-          detailed reference on using <a href="http://data.gov.au">data.gov.au</a> and using it to publish your own data
-          sets.</p></li>
-        <li><p>If you require your data set to appear under a separate category of the NationalMap Data Catalogue, you
-          will need to contact the support for NationalMap by emailing to <a href="mailto:data@pmc.gov.au">data@pmc.gov.au</a>
-          for more information. You will need to provide an internet accessible service in a standard protocol to access
-          your data set on the internet and appropriate references must be added to the NationalMap configuration.</p>
-        </li>
-      </ul>
-
 
     </div>
 
@@ -237,9 +221,8 @@
 
 <footer class="footer">
   <div class="container">
-    <p class="text-muted">&copy; Department of the Prime Minister and Cabinet, Department of Communications, and
-      National ICT Australia Limited (NICTA) 2014-2015. All Rights Reserved.</p>
-    <p><strong><a href="../about.html#terms">Terms and conditions</a></strong> – <strong><a
+    <p class="text-muted">&copy; Christchurch City Council 2024</p>
+    <p><strong><a href="/about.html#terms">Terms and conditions</a></strong> – <strong><a
       href="privacy.html">Privacy</a></strong></p>
 
   </div>
