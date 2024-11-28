@@ -127,6 +127,9 @@ body {
     &:hover {
       color: white;
     }
+    &.tjs-story-editor__cancelBtn {
+      background-color: $dark;
+    }
   }
   .tjs-_buttons__btn--tertiary {
     &:hover {
