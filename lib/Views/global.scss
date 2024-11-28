@@ -288,4 +288,9 @@ body {
   .tjs-notification-window__wrapper a {
     color: $color-secondary;
   }
+
+  .dt-warning {
+    font-weight: bold;
+    color: $color-warning;
+  }
 }
