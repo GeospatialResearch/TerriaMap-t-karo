@@ -10791,10 +10791,9 @@ terriajs-server@^4.0.0:
     request-promise "^4.0.1"
     yargs "^13.2.4"
 
-terriajs@8.7.5:
+"terriajs@git+https://github.com/GeospatialResearch/terriajs#otakaro1.0.0":
   version "8.7.5"
-  resolved "https://registry.yarnpkg.com/terriajs/-/terriajs-8.7.5.tgz#e98ad29ee6dda8911ad032f6f4b23bcd8a0f81ec"
-  integrity sha512-0Z+iovNf6jDn1eCP1W5aFDWPrrnbn64ZqYzkR4qIN7xpZ2TnLR2RnhZq91MgOZZFg1TXqKWbsXHOVThQdtml3w==
+  resolved "git+https://github.com/GeospatialResearch/terriajs#0d0484f00f999259e95238aa4a4272fdee4bfacb"
   dependencies:
     "@babel/core" "^7.23.5"
     "@babel/parser" "^7.23.5"
