@@ -4,10 +4,12 @@ html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 150px;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -25,6 +27,7 @@ body {
 body > .container {
   padding: 60px 15px 0;
 }
+
 .container .text-muted {
   margin: 20px 0;
 }
@@ -52,7 +55,7 @@ body {
 
 .embed-responsive {
 
-margin-bottom: 20px;
+  margin-bottom: 20px;
 
 }
 
@@ -65,7 +68,7 @@ ul {
   margin-bottom: 10px;
 }
 
-.how-to, .key-features, .faq  {
+.how-to, .key-features, .faq {
   list-style: none;
   padding-left: 0;
   margin-left: 0;
@@ -112,6 +115,7 @@ ul {
 .navbar-inverse .navbar-nav > .active > a {
   background-color: #328272;
 }
+
 .navbar-inverse .navbar-nav > .active > a:hover {
   background-color: #328272;
 }
@@ -122,6 +126,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 a.navbar-brand > h2 {
   color: white;
   margin: inherit;
@@ -132,6 +137,17 @@ a.navbar-brand > h2 {
 
 .navbar-brand img {
   width: 140px;
+}
+
+a.anchor-nav-adjusted {
+  position: absolute;
+  top: 95px; /* given the fixed header is 50px tall, and you want 15px padding */
+  left: 0px;
+  visibility: hidden;
+}
+
+div.container-nav-adjusted {
+  position: relative;
 }
 
 
@@ -167,7 +183,7 @@ h2 {
   border-radius: 0;
 }
 
-.panel-default>.panel-heading {
+.panel-default > .panel-heading {
   background-color: #FFFFFF;
   padding-left: 0;
   padding-top: 20px;
@@ -197,54 +213,56 @@ h2 > a {
 @media (min-width: @screen-sm-min) {
 
   .affix {
-      position: fixed;
-      text
+    position: fixed;
+    text
   }
 
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
+@media (min-width: @screen-md-min) {
+  ...
+}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-.navbar {
-  min-height: 80px;
-}
+  .navbar {
+    min-height: 80px;
+  }
 
-.navbar-nav>li>a {
-  margin-top: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
+  .navbar-nav > li > a {
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
-.navbar-brand {
-  margin-right: 80px;
-  height: 80px;
-  padding-top: 10px;
-}
+  .navbar-brand {
+    margin-right: 80px;
+    height: 80px;
+    padding-top: 10px;
+  }
 
-.navbar-brand img {
-  width: 170px;
-}
+  .navbar-brand img {
+    width: 170px;
+  }
 
-.navbar-brand h2 {
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
+  .navbar-brand h2 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
 
-.content {
-  margin-top: 80px;
-}
+  .content {
+    margin-top: 80px;
+  }
 
-.nav-header:first-of-type {
-  margin-top: 25px;
-}
+  .nav-header:first-of-type {
+    margin-top: 25px;
+  }
 
-.screenshot {
-  margin-bottom: 20px;
-}
+  .screenshot {
+    margin-bottom: 20px;
+  }
 
 
 }
